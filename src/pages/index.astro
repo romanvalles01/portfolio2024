@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Section from "../components/Section.astro";
+import Experience from "../components/Experience.astro";
+import Proyects from "../components/Proyects.astro";
+import Contact from "../components/Contact.astro";
+---
+
+<Layout title="Román Valles" />
+<div class="relative h-full w-full bg-slate-950">
+  <div
+    class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"
+  >
+  </div>
+</div>
+<Header />
+<main
+  class="snap-y relative w-full h-screen overflow-auto overflow-x-hidden scroll-smooth lg:snap-mandatory"
+>
+  <div class="lg:snap-center"><Section /></div>
+  <div class="lg:snap-center"><Experience /></div>
+  <div class="lg:snap-center"><Proyects /></div>
+  <div class="lg:snap-center"><Contact /></div>
+</main>
